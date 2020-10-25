@@ -6,7 +6,7 @@ This is a Flask Restful example project ready to deploy on cPanel.
 * Edit `/home/user/pythonapp` line in `.cpanel.yml` to your username on cPanel
 
 # Requirements & Notes
-* Do not change app.py or passenger_wsgi.py filenames. Passenger web server will automatically search for these files to start Python application. If you name your file let's say myapp.py or wsgi.py, Passenger webserver won't able to start your app.
+* Since Apache on cPanel working as a proxy for Passenger webserver, it will create some default proxy entries with app.py and passenger_wsgi.py files. Do not change app.py or passenger_wsgi.py filenames. Passenger web server will automatically search for these files to start Python application. If you name your file let's say myapp.py or wsgi.py, Passenger webserver won't able to start your app.
 
 ## Example cpanel.yml File
 ```yml
