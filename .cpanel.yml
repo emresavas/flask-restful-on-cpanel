@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/pythonapp/
+    - export DEPLOYPATH=/home/$USER/pythonapp/
     - /bin/mkdir $DEPLOYPATH
     - /bin/cp app.py $DEPLOYPATH
     - /bin/cp passenger_wsgi.py $DEPLOYPATH
